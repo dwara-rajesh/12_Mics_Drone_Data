@@ -1,7 +1,7 @@
 # Noise-Based Path Planning For Drones
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/dwara-rajesh/12_Mics_Drone_Data)
-![GitHub contributors](https://img.shields.io/github/collaborators/dwara-rajesh/12_Mics_Drone_Data?label=collaborators)
+![GitHub contributors](https://img.shields.io/github/collaborators/dwara-rajesh/12_Mics_Drone_Data?label=team)
 ![GitHub forks](https://img.shields.io/github/forks/dwara-rajesh/12_Mics_Drone_Data)
 ![GitHub stars](https://img.shields.io/github/stars/dwara-rajesh/12_Mics_Drone_Data)
 ![GitHub issues](https://img.shields.io/github/issues/dwara-rajesh/12_Mics_Drone_Data)
