@@ -8,8 +8,10 @@
 
 ## 👥 Collaborators
 
-- [@venk-meg](https://github.com/venk-meg)
-- [@dwara-rajesh](https://github.com/dwara-rajesh)
+- [@Megha Venkatesam](https://github.com/venk-meg)
+- [@Dwarakesh Rajesh](https://github.com/dwara-rajesh)
+
+---
 
 > **12\_Mics\_Drone\_Data** provides a comprehensive dataset and code framework for collecting and analyzing real-time acoustic and positional data to aid drone path planning with noise and obstacle avoidance.
 
@@ -25,8 +27,6 @@
 * [Getting Started](#getting-started)
 * [Dependencies](#dependencies)
 * [Future Work](#future-work)
-* [Contributing](#contributing)
-* [License](#license)
 
 ---
 
@@ -54,7 +54,7 @@ The data collection framework incorporates **3 Python scripts** that collect and
 * **`tellocontroller.py`**
   Used to command the drone along predefined paths (e.g., `move_forward(x)`, `rotate_counter_clockwise(90)`).
 
-All scripts are launched simultaneously using a **ROS2 launch file package**.
+All scripts are launched simultaneously using a **ROS2 launch file - 12mic_launch.py**.
 
 ---
 
@@ -82,11 +82,13 @@ All scripts are launched simultaneously using a **ROS2 launch file package**.
 
 ```
 12_Mics_Drone_Data/
-├── CSVs/                # CSV data for experiments
-├── audio/                # Audio files or external links
-├── scripts/              # Python scripts
-├── launch/               # ROS2 launch files
-└── README.md             # Documentation
+├── results/CSV Data       # CSV data from experiments
+├── mic12_CSV_logger.py    # Python script for CSV logging
+├── mic12_Audio_capture.py # Python script for audio aapture
+├── mic12_Audio_plotter.py # Python script for plotting audio
+├── tellocontroller.py     # Python script for controlling drone
+├── 12mic_launch.py        # ROS2 launch file
+└── README.md              # Documentation
 ```
 
 ---
@@ -102,15 +104,15 @@ All scripts are launched simultaneously using a **ROS2 launch file package**.
 ### Running the framework
 
 ```bash
-ros2 launch launch/mic12_data_collection.launch.py
+ros2 launch 12mic_launch.py
 ```
 
 Or run individual scripts:
 
 ```bash
-python scripts/mic12_Audio_capture.py
-python scripts/mic12_CSV_logger.py
-python scripts/mic12_Audio_plotter.py
+python mic12_Audio_capture.py
+python mic12_CSV_logger.py
+python mic12_Audio_plotter.py
 ```
 
 ---
@@ -140,14 +142,3 @@ python scripts/mic12_Audio_plotter.py
 * Improve synchronization between data streams
 * Upgrade microphone hardware
 
----
-
-## Contributing
-
-Contributions are welcome! Fork the repo, create issues, or submit pull requests.
-
----
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for details.
